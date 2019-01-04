@@ -6,8 +6,9 @@
 ### Author: Becca Lee
 
 ### Links and Resources
+![Build Status](https://www.travis-ci.com/beccalee123/09-socket.io-ns.svg?branch=master)
 * [repo](https://github.com/beccalee123/09-socket.io-ns)
-* [travis](http://xyz.com)
+* [travis](https://www.travis-ci.com/beccalee123/09-socket.io-ns)
 * [client application](https://pmww0ww42q.codesandbox.io/)
 
 ### Modules
