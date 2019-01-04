@@ -1,15 +1,15 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Socket.io Namespaces and Rooms
 
-### Author: Student/Group Name
+### Author: Becca Lee
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+![Build Status](https://www.travis-ci.com/beccalee123/09-socket.io-ns.svg?branch=master)
+* [repo](https://github.com/beccalee123/09-socket.io-ns)
+* [travis](https://www.travis-ci.com/beccalee123/09-socket.io-ns)
+* [client application](https://pmww0ww42q.codesandbox.io/)
 
 ### Modules
 #### `modulename.js`
@@ -24,7 +24,6 @@ Usage Notes or examples
 ### Setup
 #### `.env` requirements
 * `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
 
 #### Running the app
 * `npm start`
