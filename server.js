@@ -4,7 +4,7 @@ const io = require('socket.io')(3000);
 
 let counter = 0;
 let n = 0;
-// let letter = 'A';
+let letter = 'A';
 
 io.on('connection', (socket) => {
   socket.on('hi', (payload) => {
@@ -46,19 +46,25 @@ letters.on('connection', (socket) => {
 
   // This event gets emitted to anyone in any room in the numbers namespace
   socket.on('next-letter', () => {
-    let letter = 'A';
+    // let letter = 'A';
     if (n > 26) {
       n = 0;
     }
-    
 
     letter = String.fromCharCode(65 + n);
     socket.broadcast.emit('letter', letter);
 
     // Only connections in the 'lowercase' room inside of letters can hear this
-    let lowercaseLetter = letter.toLowerCase();
-    socket.in('lowercase').emit('_letter', lowercaseLetter);
+
+    socket.in('lowercase').emit('_letter', lowerCasing(letter));
 
     n++;
   });
 });
+
+function lowerCasing(letter){
+  let lowercaseLetter = letter.toLowerCase();
+  return lowercaseLetter;
+}
+
+module.exports = {lowerCasing};
